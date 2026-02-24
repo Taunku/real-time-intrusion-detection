@@ -1,0 +1,36 @@
+{
+    "analysis_time": "2026-02-19 13:20:05",
+    "total_unique_ips": 3,
+    "results": [
+        {
+            "ip": "192.168.1.10",
+            "total_requests": 1,
+            "404_errors": 0,
+            "sensitive_access_attempts": 0,
+            "risk_level": "Low",
+            "reasons": []
+        },
+        {
+            "ip": "203.0.113.5",
+            "total_requests": 3,
+            "404_errors": 3,
+            "sensitive_access_attempts": 3,
+            "risk_level": "High",
+            "reasons": [
+                "Rapid request burst detected (it is maybe a bot)",
+                "Multiple 404 errors (possible directory scanning)",
+                "Repeated access to sensitive paths"
+            ]
+        },
+        {
+            "ip": "198.51.100.7",
+            "total_requests": 2,
+            "404_errors": 0,
+            "sensitive_access_attempts": 2,
+            "risk_level": "High",
+            "reasons": [
+                "Repeated access to sensitive paths"
+            ]
+        }
+    ]
+}
